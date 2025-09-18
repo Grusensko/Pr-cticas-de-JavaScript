@@ -1,0 +1,77 @@
+/* Estilos generales para la calculadora */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Contenedor principal de la calculadora */
+.calculadora {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+}
+
+/* Área de resultados */
+.display{
+    display:grid;
+
+    & .resultado {
+        max-width: calc(300px - 2rem);
+        background-color: #eaeaea;
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 2em;
+        text-align: right;
+        margin-bottom: 20px;
+    }   
+}
+
+/* Estilos para los botones */
+.boton {
+    background-color: #007aff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 1.5em;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 60px;
+}
+
+.boton:hover {
+    background-color: #005bb5;
+}
+
+/* Estilos para el botón de igual */
+.boton-igual {
+    background-color: #34c759;
+}
+
+.boton-igual:hover {
+    background-color: #28a745;
+}
+
+/* Estilos para el botón de porcentaje */
+.boton-porcentaje {
+    background-color: #ffcc00;
+}
+
+.boton-porcentaje:hover {
+    background-color: #e6b800;
+}
+
+/* Estilos para el historial */
+.historial {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #666;
+}
