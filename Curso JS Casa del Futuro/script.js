@@ -141,15 +141,85 @@ console.log("El resto de 17 ÷ 3 es: " + resto);
 let sinValor;
 console.log("Valor inicial de sinValor: " + sinValor);
 
+console.log("--  EJEMPLO DE IF ELSE --");
+let nota = 40;
+
+if (nota >= 90) {
+  console.log("Excelente 😎");
+} else if (nota >= 75) {
+  console.log("Muy bien 👍");
+} else if (nota >= 60) {
+  console.log("Aprobado ✅");
+} else {
+  console.log("Reprobado ❌");
+}
+
+ console.log("--  EJEMPLO DE SWITCH --");
+
+   fruta = 5;
+
+    switch (fruta) {
+        case 1:
+            console.log("Banana");  break;
+        case 2:
+            console.log("Naranja"); break;
+        case 4:
+            console.log("Melón"); break;
+        case 3:
+            console.log("Manzana"); break;
+        case 5: 
+            console.log("Pera"); break;
+        case 6:
+            console.log("Uva"); break;   
+        case 7:
+            console.log("Mandarina"); break; 
+        default:
+            console.log("Fruta no disponible");    
+    }
+
+ console.log("-- ej 3 -->  EJEMPLO DE FOR: Haz un bucle for que imprima los números del 1 al 10.  --");
+
+ for (let i = 1; i <= 10; i++) {
+    console.log("Número: " + i);
+ }
 
 
+console.log("-- ej 4 -->  EJEMPLO DE While: Crea un programa que calcule el factorial de un número usando while. --");
 
 
+ let numeroX = 5;  // Número al que queremos calcular el factorial
+let factorial = 1;
+let i = 1;
+
+while (i <= numeroX) {
+  factorial *= i; // Es equivalente a factorial = factorial * i
+  i++;
+}
+
+console.log(`El factorial de ${numeroX} es: ${factorial}`);
+
+console.log("-- ej 5 --> Escribe un condicional que determine si una persona puede votar según su edad. --");
+
+let edadVotar = 17; // Cambia este valor para probar diferentes casos
+
+console.log("Edad: " + edadVotar);
+
+if (edadVotar >= 18) {
+  console.log("Puedes votar 🗳️");
+} else {
+  console.log("No puedes votar, eres menor de edad ❌");
+}
+
+console.log("-- ej 6 --> Imprime los números pares entre 1 y 20 con un bucle for. --");
+
+for (let i = 1; i <= 20; i++) {
+  if (i % 2 === 0) { 
+    console.log(i);
+  }
+}
 
 
-
-
-    console.log("-------------  CLASE 3 - JavaScript ------------------");
+console.log("-------------  CLASE 3 - JavaScript ------------------");
     
 /*document.getElementById("miBoton").onclick = function() {
 
